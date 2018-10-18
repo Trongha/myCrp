@@ -49,7 +49,7 @@ def crossRecurrencePlots(windowTitle, dataMatrixBinary, dotSize = 0, myTitle = '
 		for x in range(len(dataMatrixBinary[y])):
 			if (dataMatrixBinary[y][x] == 1):
 				dataX.append(x)
-				dataY.append(hightOfData-y-1)
+				dataY.append( hightOfData - y -1)
 
 	scatterGraph(windowTitle , dataX, dataY, dotSize, myTitle , labelX , labelY )
 

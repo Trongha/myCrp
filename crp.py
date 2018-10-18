@@ -42,6 +42,7 @@ def SyncPredictToTestArr(indexSet, dataSet):
 		i+=1		
 	return outputArr
 
+
 def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, percent=0.6, titleOfGraph = 'Pretty Girl'):
 
 	# # vectors_train = data['train_data']
@@ -74,7 +75,6 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 	# y là train: đánh số từ trên xuống dưới
 	# x là test
 	r_dist = cdist(vectors_train_1, vectors_test_1, 'minkowski', p=1)
-	print(r_dist)
 	
 	# print("r_dist:",r_dist)
 
@@ -91,72 +91,95 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 	# indx_vectors_timeseries_test = indx_vectors_timeseries_test.reshape((vectors_test.shape[0], dim))
 	predict_label = np.zeros(len(testSet),dtype=int)
 	
-	#r1 là ma trận 01
-	r1 = np.array(r_dist < epsilon)
-	f_crp = myCrpFunctions.crossRecurrencePlots("CRP", r1, dotSize = 0.2)
+	#r1 là ma trận -2|-1
+	#-2 là false
+	#-1 là true
+	r1 = np.array((r_dist < epsilon)-2)
+	# r1 = np.array(r1 - 2)
+	
+	print(r1)
+	# f_crp = myCrpFunctions.crossRecurrencePlots("CRP", r1, dotSize = 0.2)
 
 	len_r1 = int(np.size(r1[0]))
 	high_r1 = int(np.size(r1)/len_r1)
 
 	#x is an array whose each element is a diagonal of the crp matrix
-	x = []
+	diagonalsMatrix = []
 
 	for offset in range(-high_r1+1, len_r1):
-		x.append(np.array(np.diagonal(r1, offset), dtype=int))
+		diagonalsMatrix.append(np.array(np.diagonal(r1, offset), dtype=int))
 	# print(x)
 	
-	f_crp = myCrpFunctions.crossRecurrencePlots("CRP2", x, dotSize = 0.2)
+	# f_crp = myCrpFunctions.crossRecurrencePlots("CRP2", diagonalsMatrix, dotSize = 0.2)
+	
 
-
-	index_vecto = []
-	#index_vecto là index của các statePhase trong ma trận r_dist
-	#đoạn dưới là lấy index cho index_vecto từ ma trận đường chéo
-	for i_row in range(len(x)):
-		lenn = np.size(x[i_row])
+	indexHavePredictMatrix = []					
+	for i_row in range(len(diagonalsMatrix)):
+		havePredict = 0
+		lenn = np.size(diagonalsMatrix[i_row])
 		i = 0
 		while i<lenn:
-			if (x[i_row][i] == 1):
+			if (diagonalsMatrix[i_row][i] == -1):
 				start = i
-				while (i<lenn-1 and x[i_row][i+1] == 1 ):
+				while (i<lenn-1 and diagonalsMatrix[i_row][i+1] == -1 ):
 					i+=1
 				if (i-start+1 > lambd):
-					for temp in range(i-start+1):
+					havePredict = 1
+					for j in range(start, i+1, 1):
+						
 						if (i_row < high_r1):
-							index_vecto.append(start+temp)
+							diagonalsMatrix[i_row][j] = j
 						else:
-							index_vecto.append(i_row - high_r1 + start + 1 + temp)			
+							diagonalsMatrix[i_row][j] = (i_row - high_r1 + 1 + j)			
 			i+=1
+		if (havePredict == 1):
+			indexHavePredictMatrix.append(diagonalsMatrix[i_row])
 
-	#lọc y
-	index_vecto.sort()
-	index_vecto = filter_sort(index_vecto)
+	indexSampleOrigin = indexHavePredictMatrix
 
-	#index của cái feature ban đầu
-	index_timeseries_test = []
-	#đoạn này chuyển lại statephase thành feature
-	for i in index_vecto:
-		for j in range(((int(dim*percent))-1)*tau + 1):
-			index_timeseries_test.append(i+j)
-	#lọc
-	index_timeseries_test.sort()
-	index_timeseries_test = filter_sort(index_timeseries_test)
+	for i_row in range(len(indexSampleOrigin)):
+		for i_in_1_State in range(len(indexSampleOrigin[i_row])):
+			if (indexSampleOrigin[i_row][i_in_1_State] >= 0):
+				if ((i_in_1_State == len(indexSampleOrigin[i_row]) - 1) or (indexSampleOrigin[i_row][i_in_1_State+1] < 0)):
+					for j in range(((int(dim*percent))-1)*tau):
+						indexSampleOrigin[i_row] = np.insert(indexSampleOrigin[i_row], i_in_1_State+j+1, indexSampleOrigin[i_row][i_in_1_State] + j + 1)
 
-	#khởi tạo label
-	for i in index_timeseries_test:
-		predict_label[i] = 1
-	print('predict_label:', predict_label)
-	print('num predict: ', np.sum(predict_label))
+	
+	valueOfSample = []
 
-	testSetPr = SyncPredictToTestArr(index_timeseries_test, testSet)
+	for i in range(len(indexSampleOrigin)):
+		arr = []
+		for j in range(len(indexSampleOrigin[i])):
+			if (indexSampleOrigin[i][j] < 0): 
+				arr.append(0)
+			else:
+				arr.append(testSet[indexSampleOrigin[i][j]])
+		valueOfSample.append(arr)
 
-	f_line = plt.figure("line")
-	for i in range(1, np.size(testSetPr)):
-		plt.plot(testSetPr[i], ':', label=i)
+	# print("----------------------------------------------------------------------------------------------------------------\n",
+	# 	valueOfSample,
+	# 	"\n------------------------------------------------------------------------------------------------------------------")
+
+
+	# #khởi tạo label
+	# for i in index_timeseries_test:
+	# 	predict_label[i] = 1
+	# print('predict_label:', predict_label)
+	# print('num predict: ', np.sum(predict_label))
+
+	# testSetPr = SyncPredictToTestArr(index_timeseries_test, testSet)
+
+	f_line= plt.figure("line")
+	for i in range(0, len(valueOfSample)):
+		plt.plot(valueOfSample[i], ':', label=i)
 	plt.plot(trainSet, 'r', label='train')
 	plt.legend(loc=0)
 	plt.xlabel('index')
 	plt.ylabel('feature')
+
+	titleOfGraph = titleOfGraph + "-epsi_" + str(epsilon) + "-lamb_" + str(lambd)
 	plt.title(titleOfGraph)
+	plt.ylim(ymin = min(trainSet) - 0.05)
 	# plt.show()
 
 	return predict_label.ravel().tolist()
@@ -180,15 +203,25 @@ if (__name__ == "__main__"):
 	trainSet = myCrpFunctions.ConvertSetNumber(dataTrain, minOfSet = minOfNorm, maxOfSet = maxOfNorm)
 	testSet = myCrpFunctions.ConvertSetNumber(dataTest, minOfSet = minOfNorm, maxOfSet = maxOfNorm)
 
-	for start in range(0, 15237, 8):
-		
-		finish = start+16
-		s = str(start) + " - " + str(finish)
-		print(s)
-		print(trainSet[start:finish])
-		predict_diagonal(trainSet[start:finish], testSet ,
-							dim=5, tau=2, epsilon=0.08, lambd=5, percent=1, titleOfGraph = s)
+	# start = 1080
+	# finish = start+16
+	# s = str(start) + " - " + str(finish)
+	# print(s)
+	# print(trainSet[start:finish])
+	# predict_diagonal(trainSet[start:finish], testSet[800:1000] ,
+	# 					dim=5, tau=2, epsilon=0.2, lambd=5, percent=1, titleOfGraph = s)
 
-		plt.show()
+	# plt.show()
+
+	# for start in range(10890, 20099, 100):
+		
+	# 	finish = start+16
+	# 	title = str(start) + " - " + str(finish)
+	# 	print(title)
+	# 	print(trainSet[start:finish])
+	# 	predict_diagonal(trainSet[start:finish], testSet ,
+	# 						dim=5, tau=2, epsilon=0.1, lambd=5, percent=1, titleOfGraph = title)
+
+	# 	plt.show()
 		
 
