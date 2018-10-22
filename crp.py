@@ -62,7 +62,7 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 	for i in range(len(testSet)-(dim-1)*tau):
 		vectors_test_1.append(state_phase(testSet, i, dim, tau))
 
-		#ép kiểu về array
+	#ép kiểu về array
 	vectors_train_1 = np.array(vectors_train_1)
 	vectors_test_1 = np.array(vectors_test_1)
 
@@ -75,7 +75,8 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 	# y là train: đánh số từ trên xuống dưới
 	# x là test
 	r_dist = cdist(vectors_train_1, vectors_test_1, 'minkowski', p=1)
-	
+
+	# epsilon = r_dist.min()
 	# print("r_dist:",r_dist)
 
 	print('vectors_train.shape: ', vectors_train_1.shape) #in ra shape
@@ -91,9 +92,11 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 	# indx_vectors_timeseries_test = indx_vectors_timeseries_test.reshape((vectors_test.shape[0], dim))
 	predict_label = np.zeros(len(testSet),dtype=int)
 	
-	#r1 là ma trận -2|-1
+	#r1 là ma trận -2|-1 thay vì ma trận 01 như crp
 	#-2 là false
 	#-1 là true
+	#r_dist < epsilon trả về ma trận 01, 1 tại điểm r_dist < epsilon
+	#ma trận này trừ đi 2 thì thành ma trận -2|-1
 	r1 = np.array((r_dist < epsilon)-2)
 	# r1 = np.array(r1 - 2)
 	
@@ -112,7 +115,8 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 	
 	# f_crp = myCrpFunctions.crossRecurrencePlots("CRP2", diagonalsMatrix, dotSize = 0.2)
 	
-
+	#Mảng này gồm những hàng chứa index của statePhrase có dự đoán, nghĩa là giống với train
+	#những đường ko có khoảng giống với train sẽ bị bỏ qua
 	indexHavePredictMatrix = []					
 	for i_row in range(len(diagonalsMatrix)):
 		havePredict = 0
@@ -132,9 +136,11 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 						else:
 							diagonalsMatrix[i_row][j] = (i_row - high_r1 + 1 + j)			
 			i+=1
+		# Nếu hàng có dự đoán thì sẽ giữ lại
 		if (havePredict == 1):
 			indexHavePredictMatrix.append(diagonalsMatrix[i_row])
 
+	#Mảng quy đổi về index của dữ liệu test từ index của statePhrase
 	indexSampleOrigin = indexHavePredictMatrix
 
 	for i_row in range(len(indexSampleOrigin)):
@@ -144,17 +150,18 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 					for j in range(((int(dim*percent))-1)*tau):
 						indexSampleOrigin[i_row] = np.insert(indexSampleOrigin[i_row], i_in_1_State+j+1, indexSampleOrigin[i_row][i_in_1_State] + j + 1)
 
-	
+	# Lấy giá trị từ index của sample trong testSet
 	valueOfSample = []
 
 	for i in range(len(indexSampleOrigin)):
 		arr = []
 		for j in range(len(indexSampleOrigin[i])):
 			if (indexSampleOrigin[i][j] < 0): 
-				arr.append(0)
+				arr.append(None)
 			else:
 				arr.append(testSet[indexSampleOrigin[i][j]])
-		valueOfSample.append(arr)
+		if (len(arr) == len(trainSet)):
+			valueOfSample.append(arr)
 
 	# print("----------------------------------------------------------------------------------------------------------------\n",
 	# 	valueOfSample,
@@ -213,14 +220,14 @@ if (__name__ == "__main__"):
 
 	# plt.show()
 
-	# for start in range(10890, 20099, 100):
+	# for start in range(2345, 20099, 123):
 		
-	# 	finish = start+16
+	# 	finish = start+30
 	# 	title = str(start) + " - " + str(finish)
 	# 	print(title)
 	# 	print(trainSet[start:finish])
 	# 	predict_diagonal(trainSet[start:finish], testSet ,
-	# 						dim=5, tau=2, epsilon=0.1, lambd=5, percent=1, titleOfGraph = title)
+	# 						dim=5, tau=2, epsilon=0.15, lambd=5, percent=1, titleOfGraph = title)
 
 	# 	plt.show()
 		

@@ -7,6 +7,9 @@ diagonalsMatrix = np.array([[-1, -1, -1, -1, -2, -2],
 					[-2, -2, -2, -2, -2, -1]
 					])
 
+testNone = [1, 2, None, None];
+print(testNone)
+
 x = np.array([0, 1, 2,3 ,4 , 5])
 x = np.insert(x, 6, 100)
 print(x)
