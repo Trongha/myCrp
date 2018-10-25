@@ -2,16 +2,12 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.spatial.distance import cdist
-from sklearn.metrics import classification_report
 from collections import Counter
-from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import confusion_matrix
-from sklearn.preprocessing import MinMaxScaler
 import json
 import os, sys
 import math
 import myCrpFunctions
-import random
+
 
 def filter_sort(arr):
 		x = []
@@ -114,7 +110,7 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 
 	index_vecto = []
 	#index_vecto là index của các statePhase trong ma trận r_dist
-	#đoạn dưới là lấy index cho index_vecto từ ma trận đường chéo
+	#đoạn dưới là lấy vị trí statePhase test cho index_vecto từ ma trận đường chéo
 	for i_row in range(len(diagonalsMatrix)):
 		lenn = np.size(diagonalsMatrix[i_row])
 		i = 0
@@ -130,10 +126,6 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 						else:
 							index_vecto.append(i_row - high_r1 + start + 1 + temp)			
 			i+=1
-
-
-
-
 
 	print("------------------------------------------\n",
 			index_vecto,
@@ -196,9 +188,13 @@ if (__name__ == "__main__"):
 	s = str(start) + " - " + str(finish)
 	print(s)
 	print(trainSet[start:finish])
-	predict_diagonal(testSet[900:1000], testSet[800:1100] ,
-						dim=5, tau=2, epsilon=0.2, lambd=5, percent=1, titleOfGraph = s)
+	# predict_diagonal(testSet[800:1100], testSet[800:1100] ,
+	# 					dim=5, tau=2, epsilon=0.2, lambd=5, percent=1, titleOfGraph = s)
+						
+	predict_diagonal(testSet[800:1100], testSet[800:1100] ,
+							dim=5, tau=2, epsilon=0.2, lambd=5, percent=1, titleOfGraph = s)
 
+	
 	plt.show()
 
 	# for start in range(0, 15237, 8):

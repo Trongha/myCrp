@@ -1,49 +1,110 @@
 import numpy as np
+import myCrpFunctions
+import matplotlib.pyplot as plt
 
-diagonalsMatrix = np.array([[-1, -1, -1, -1, -2, -2],
-					[-2, -2, -2, -2, -2, -1],
-					[-1, -1, -1, -1, -2, -2],
-					[-2, -1, -1, -1, -1, -1],
-					[-2, -2, -2, -2, -2, -1]
+
+# r1 =np.array      ([[-1, -1, -1, -1, -1, -1, -1, -2, -2, -2, -2, -1, -1, -1, -1, -1, -2],
+# 					[-1, -2, -1, -1, -1, -1, -2, -2, -2, -2, -1, -1, -2, -1, -1, -1, -2],
+# 					[-1, -1, -1, -1, -2, -2, -1, -1, -1, -1, -1, -1, -1, -2, -1, -1, -1],
+# 					[-1, -1, -1, -1, -1, -1, -2, -1, -1, -1, -1, -2, -1, -1, -1, -1, -1],
+# 					[-2, -1, -1, -2, -2, -1, -2, -1, -1, -1, -2, -1, -1, -1, -2, -1, -2],
+# 					[-2, -2, -2, -2, -1, -1, -1, -1, -1, -2, -1, -2, -1, -1, -2, -1, -2],
+# 					[-2, -1, -1, -1, -2, -1, -2, -1, -1, -1, -2, -1, -1, -1, -2, -1, -2],
+# 					[-1, -2, -1, -1, -1, -1, -1, -2, -2, -2, -1, -1, -2, -1, -1, -1, -2],
+# 					[-1, -2, -1, -1, -1, -1, -2, -2, -2, -2, -1, -1, -2, -1, -1, -1, -2]
+# 					])
+r1 =np.array      ([[-1, -2, -2, -1, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -1, -1, -1],
+					[-1, -1, -2, -2, -1, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -1, -1],
+					[-2, -1, -1, -2, -2, -1, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -1],
+					[-2, -2, -1, -1, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2],
+					[-2, -2, -2, -2, -2, -2, -2, -1, -2, -2, -2, -2, -2, -2, -2, -2, -2],
+					[-2, -2, -2, -2, -1, -2, -2, -2, -1, -2, -2, -2, -2, -2, -1, -2, -2],
+					[-1, -2, -2, -2, -2, -1, -2, -2, -2, -1, -2, -2, -2, -2, -2, -1, -2],
+					[-2, -1, -2, -2, -2, -2, -1, -2, -2, -2, -1, -2, -2, -2, -2, -2, -1],
+					[-1, -2, -1, -2, -2, -2, -2, -2, -2, -2, -2, -1, -2, -2, -2, -2, -2]
 					])
 
-testNone = [1, 2, None, None];
-print(testNone)
+print(r1)
 
-x = np.array([0, 1, 2,3 ,4 , 5])
-x = np.insert(x, 6, 100)
-print(x)
+r2 = np.array([])
 
+len_r1 = int(np.size(r1[0]))
+high_r1 = int(np.size(r1)/len_r1)
 
-diagonalsMatrix2 = []
+print("high_r1: ", high_r1)
+print("len_r1: ", len_r1)
+#x is an array whose each element is a diagonal of the crp matrix
+diagonals_have_predict = []
 lambd = 3
-i_row = 0
-print(np.size(diagonalsMatrix))
-while (i_row < np.size(diagonalsMatrix)):
-	print(i_row)
-	havePredict = 0
-	lenn = np.size(diagonalsMatrix[i_row])
-	i = 0
-	while i<lenn:
-		if (diagonalsMatrix[i_row][i] == -1):
-			start = i
-			while (i<lenn-1 and diagonalsMatrix[i_row][i+1] == -1 ):
-				i+=1
-			if (i-start+1 > lambd):
-				havePredict = 1			
-		i+=1
-	if (havePredict == 1):
-		diagonalsMatrix2.append(diagonalsMatrix[i_row])
-	i_row += 1
 
-print(diagonalsMatrix2)
+for yStart in range(high_r1 - lambd + 1, 0, -1):
+	offset = -yStart		# x = y + offset
+	y = yStart
+	while y < high_r1 :
+		if (r1[y][y+offset] == -1):
+			start = y
+			while ( y+1 < high_r1 and r1[y+1][y+1+offset] == -1):
+				y+=1
+			if (y - start + 1 >= lambd):
+				predicts = np.full(y+1, -2)
 
-for test in diagonalsMatrix2:
-	for i in range(len(test)):
-		if (test[i] == -1  ):
-			if (i == len(test)-1 or test[i+1] != -1):
-				for j in range(5):
-					np.insert(test, i+j, 10)
-					# test.insert(i+j+1, 10)
+				for index in range(start, y+1, 1):
+					predicts[index] = index + offset
+				diagonals_have_predict.append(predicts)
+		y+=1
 
-print(diagonalsMatrix2)
+for xStart in range(0, len_r1 - lambd + 2):
+	offset = xStart		# y = x - offset
+	y = 0
+	while (y < high_r1 and y+offset < len_r1):
+		if (r1[y][y+offset] == -1):
+			start = y
+			while ( y+1<high_r1 and y+1+offset < len_r1 and r1[y+1][y+1+offset] == -1):
+				y+=1
+			if (y - start + 1 >= lambd):
+				predicts = np.full(y+1, -2)
+
+				for index in range(start, y+1, 1):
+					predicts[index] = index + offset
+				diagonals_have_predict.append(predicts)
+		y+=1
+print("diagonals_have_predict: \n")
+for row in diagonals_have_predict:
+	print (row)	
+
+
+diagonals_have_predict2 = []
+for index_diagonal in range(-(high_r1 - lambd + 1), len_r1 - lambd + 2, 1):
+	offset = index_diagonal
+	#---offset = x - y
+	print(offset)
+	y = -offset if (index_diagonal < 0) else 0
+
+	while (y < high_r1 and y+offset < len_r1):
+		if (r1[y][y+offset] == -1):
+			start = y
+			while ( y+1<high_r1 and y+1+offset < len_r1 and r1[y+1][y+1+offset] == -1):
+				y+=1
+			if (y - start + 1 >= lambd):
+				predicts = np.full(y+1, -2)
+
+				for index in range(start, y+1, 1):
+					predicts[index] = index + offset
+				diagonals_have_predict2.append(predicts)
+		y+=1
+
+print("diagonals_have_predict2: \n")
+for row in diagonals_have_predict2:
+	print (row)
+
+
+
+
+
+# testNone = [1, 2, None, None];
+# print(testNone)
+
+# x = np.array([0, 1, 2,3 ,4 , 5])
+# x = np.insert(x, 6, 100)
+# print(x)
+# plt.show()

@@ -2,11 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.spatial.distance import cdist
-from sklearn.metrics import classification_report
 from collections import Counter
-from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import confusion_matrix
-from sklearn.preprocessing import MinMaxScaler
 import json
 import os, sys
 import math
@@ -76,6 +72,8 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 	# x là test
 	r_dist = cdist(vectors_train_1, vectors_test_1, 'minkowski', p=1)
 
+	print(r_dist)
+
 	# epsilon = r_dist.min()
 	# print("r_dist:",r_dist)
 
@@ -100,52 +98,45 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 	r1 = np.array((r_dist < epsilon)-2)
 	# r1 = np.array(r1 - 2)
 	
-	print(r1)
 	# f_crp = myCrpFunctions.crossRecurrencePlots("CRP", r1, dotSize = 0.2)
 
 	len_r1 = int(np.size(r1[0]))
 	high_r1 = int(np.size(r1)/len_r1)
 
 	#x is an array whose each element is a diagonal of the crp matrix
-	diagonalsMatrix = []
+	
+	#Đoạn này lấy ra những đoạn đường chéo có số lượng predict liền nhau lớn hơn lamdb
+	#Mỗi phần tử của diagonals_have_predict là một mảng chứa đúng 1 đoạn trùng với train tương ứng đúng vị trí
+	diagonals_have_predict = []
+	for index_diagonal in range(-(high_r1 - lambd + 1), len_r1 - lambd + 2, 1):
+		offset = index_diagonal
+		#---offset = x - y
+		print(offset)
+		y = -offset if (index_diagonal < 0) else 0
 
-	for offset in range(-high_r1+1, len_r1):
-		diagonalsMatrix.append(np.array(np.diagonal(r1, offset), dtype=int))
-	# print(x)
+		while (y < high_r1 and y+offset < len_r1):
+			if (r1[y][y+offset] == -1):
+				start = y
+				while ( y+1<high_r1 and y+1+offset < len_r1 and r1[y+1][y+1+offset] == -1):
+					y+=1
+				if (y - start + 1 >= lambd):
+					predicts = np.full(y+1, -2)
+
+					for index in range(start, y+1, 1):
+						predicts[index] = index + offset
+					diagonals_have_predict.append(predicts)
+			y+=1
 	
-	# f_crp = myCrpFunctions.crossRecurrencePlots("CRP2", diagonalsMatrix, dotSize = 0.2)
-	
-	#Mảng này gồm những hàng chứa index của statePhrase có dự đoán, nghĩa là giống với train
-	#những đường ko có khoảng giống với train sẽ bị bỏ qua
-	indexHavePredictMatrix = []					
-	for i_row in range(len(diagonalsMatrix)):
-		havePredict = 0
-		lenn = np.size(diagonalsMatrix[i_row])
-		i = 0
-		while i<lenn:
-			if (diagonalsMatrix[i_row][i] == -1):
-				start = i
-				while (i<lenn-1 and diagonalsMatrix[i_row][i+1] == -1 ):
-					i+=1
-				if (i-start+1 > lambd):
-					havePredict = 1
-					for j in range(start, i+1, 1):
-						
-						if (i_row < high_r1):
-							diagonalsMatrix[i_row][j] = j
-						else:
-							diagonalsMatrix[i_row][j] = (i_row - high_r1 + 1 + j)			
-			i+=1
-		# Nếu hàng có dự đoán thì sẽ giữ lại
-		if (havePredict == 1):
-			indexHavePredictMatrix.append(diagonalsMatrix[i_row])
 
 	#Mảng quy đổi về index của dữ liệu test từ index của statePhrase
-	indexSampleOrigin = indexHavePredictMatrix
+	#
+
+	indexSampleOrigin = diagonals_have_predict
 
 	for i_row in range(len(indexSampleOrigin)):
 		for i_in_1_State in range(len(indexSampleOrigin[i_row])):
 			if (indexSampleOrigin[i_row][i_in_1_State] >= 0):
+				#Chọn số index state cuối cùng
 				if ((i_in_1_State == len(indexSampleOrigin[i_row]) - 1) or (indexSampleOrigin[i_row][i_in_1_State+1] < 0)):
 					for j in range(((int(dim*percent))-1)*tau):
 						indexSampleOrigin[i_row] = np.insert(indexSampleOrigin[i_row], i_in_1_State+j+1, indexSampleOrigin[i_row][i_in_1_State] + j + 1)
@@ -160,13 +151,11 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 				arr.append(None)
 			else:
 				arr.append(testSet[indexSampleOrigin[i][j]])
-		if (len(arr) == len(trainSet)):
-			valueOfSample.append(arr)
 
-	# print("----------------------------------------------------------------------------------------------------------------\n",
-	# 	valueOfSample,
-	# 	"\n------------------------------------------------------------------------------------------------------------------")
+		# if (len(arr) == len(trainSet)):
+		# 	valueOfSample.append(arr)
 
+		valueOfSample.append(arr)
 
 	# #khởi tạo label
 	# for i in index_timeseries_test:
@@ -178,15 +167,16 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 
 	f_line= plt.figure("line")
 	for i in range(0, len(valueOfSample)):
+
 		plt.plot(valueOfSample[i], ':', label=i)
 	plt.plot(trainSet, 'r', label='train')
 	plt.legend(loc=0)
 	plt.xlabel('index')
 	plt.ylabel('feature')
 
-	titleOfGraph = titleOfGraph + "-epsi_" + str(epsilon) + "-lamb_" + str(lambd)
+	titleOfGraph = titleOfGraph + " - Epsi=" + str(epsilon) + " - lamb=" + str(lambd)
 	plt.title(titleOfGraph)
-	plt.ylim(ymin = min(trainSet) - 0.05)
+	# plt.ylim(ymin = min(trainSet) - 0.09)
 	# plt.show()
 
 	return predict_label.ravel().tolist()
@@ -210,15 +200,17 @@ if (__name__ == "__main__"):
 	trainSet = myCrpFunctions.ConvertSetNumber(dataTrain, minOfSet = minOfNorm, maxOfSet = maxOfNorm)
 	testSet = myCrpFunctions.ConvertSetNumber(dataTest, minOfSet = minOfNorm, maxOfSet = maxOfNorm)
 
-	# start = 1080
-	# finish = start+16
-	# s = str(start) + " - " + str(finish)
-	# print(s)
+	start = 3945
+	finish = start+30
+	title = str(start) + " - " + str(finish)
+	print(title)
 	# print(trainSet[start:finish])
 	# predict_diagonal(trainSet[start:finish], testSet[800:1000] ,
 	# 					dim=5, tau=2, epsilon=0.2, lambd=5, percent=1, titleOfGraph = s)
 
-	# plt.show()
+	predict_diagonal(trainSet[start:finish], testSet ,
+	 						dim=5, tau=2, epsilon=0.095, lambd=5, percent=1, titleOfGraph = title)
+	plt.show()
 
 	# for start in range(2345, 20099, 123):
 		

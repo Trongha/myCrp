@@ -12,7 +12,7 @@ def readCSVFile(path, numOfCol = 0):
 				col6.append(hang[5])
 	return col6
 def lineGraph(ySet):
-	print(ySet)
+	# print(ySet)
 	plt.plot(ySet, label = 'trainSet')
 	plt.title('lineGraph')
 	plt.show()
@@ -31,6 +31,7 @@ def ConvertSetNumber(Set, lenOfSet = 0, minOfSet = 0, maxOfSet = 0, newMinOfSet 
 	ratio =(newMaxOfSet - newMinOfSet)/(maxOfSet - minOfSet)
 	return [((x - minOfSet)*ratio + newMinOfSet) for x in Set]
 
+#vẽ biểu đồ chấm từ mảng x và mảng y
 def scatterGraph(windowTitle , dataX, dataY, dotSize = 0,myTitle = 'prettyGirl', labelX = 'xxxxx', labelY = 'yyyyy'):
 	f = plt.figure(windowTitle)
 	plt.scatter(dataX, dataY, s = dotSize)
@@ -41,6 +42,7 @@ def scatterGraph(windowTitle , dataX, dataY, dotSize = 0,myTitle = 'prettyGirl',
 	return f
 	# plt.show()
 
+# vẽ biểu đồ crp từ ma trận 01
 def crossRecurrencePlots(windowTitle, dataMatrixBinary, dotSize = 0, myTitle = 'prettyGirl', labelX = 'xxxxx', labelY = 'yyyyy'):
 	dataX = []
 	dataY = []
@@ -49,9 +51,12 @@ def crossRecurrencePlots(windowTitle, dataMatrixBinary, dotSize = 0, myTitle = '
 		for x in range(len(dataMatrixBinary[y])):
 			if (dataMatrixBinary[y][x] == 1):
 				dataX.append(x)
+				## append hight-y nếu muốn vẽ đồ thị đúng chiều như lưu trong ma trận
 				dataY.append( hightOfData - y -1)
+				## vẽ trục y từ dưới lên
+				#dataY.append(y);
 
-	scatterGraph(windowTitle , dataX, dataY, dotSize, myTitle , labelX , labelY )
+	return scatterGraph(windowTitle , dataX, dataY, dotSize, myTitle , labelX , labelY )
 
 if (__name__ == '__main__'):
 	dataSet = readCSVFile("data/15_1-SD-2X-DEV_LQC.csv")
