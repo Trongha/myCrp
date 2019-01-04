@@ -2,15 +2,15 @@ import matplotlib.pyplot as plt
 import csv
 import numpy as np 
 
-def readCSVFile(path, numOfCol = 0):
-	col6 = []
+def readCSVFile(path, indexOfCol = 0):
+	col = []
 	with open(path, 'r') as File:
 		thisCSVFile = csv.reader(File)
 		for hang in thisCSVFile:
-			hang[5] = float(hang[5])
-			if (hang[5] > 0):
-				col6.append(hang[5])
-	return col6
+			hang[indexOfCol] = float(hang[indexOfCol])
+			if (hang[indexOfCol] > 0):
+				col.append(hang[indexOfCol])
+	return col
 def lineGraph(ySet):
 	# print(ySet)
 	plt.plot(ySet, label = 'trainSet')

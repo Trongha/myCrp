@@ -1,6 +1,23 @@
 import numpy as np
 import myCrpFunctions
 import matplotlib.pyplot as plt
+import os
+
+def createFolder(directory):
+    try:
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+    except OSError:
+        print ('Error: Creating directory. ' +  directory)
+
+
+createFolder("testMakeFolder")
+
+
+
+
+
+
 
 
 # r1 =np.array      ([[-1, -1, -1, -1, -1, -1, -1, -2, -2, -2, -2, -1, -1, -1, -1, -1, -2],

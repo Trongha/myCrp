@@ -2,9 +2,225 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2ea247-8da3-4d20-a0d4-0d7f864efabd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/crp Chưa tối ưu lần 1.py" beforeDir="false" afterPath="$PROJECT_DIR$/crp Chưa tối ưu lần 1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crp.py" beforeDir="false" afterPath="$PROJECT_DIR$/crp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/15_1-SD-1X_LQC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/15_1-SD-2X-DEV_LQC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/15_1-SD-3X_LQC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/15_1-SD-5X-PL_LQC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/15_1-SD-6X_LQC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hiep.py" beforeDir="false" afterPath="$PROJECT_DIR$/hiep.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myCrpFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/myCrpFunctions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/520-536.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/528-544.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/536-552.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/592-608.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/608-624.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/632-648.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/656-672.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/Figure_1-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/Figure_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out1 dim=5, tau=2, epsilon=0.08, lambd=5,/Untitled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.05/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.1/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.2/line-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.2/line-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.2/line-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.2/line-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.2/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.3/line-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.3/line-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.3/line-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.3/line-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.3/line-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.3/line-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output 19102018 - ep = 0.3/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line-99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.05/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.1/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.2/line-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.2/line-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.2/line-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output19102018/output 19102018 - ep = 0.2/line.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +236,11 @@
     <session id="-1045682150">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,15 +266,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -86,6 +300,7 @@
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -169,7 +384,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -201,11 +416,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/crp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>

@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/crpToGit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/myCrp-Hcp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/myCrp-Hcp - Copy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/testGit/Dictionary1" vcs="Git" />
   </component>
 </project>
