@@ -5,6 +5,12 @@ import matplotlib.pyplot as plt
 from scipy.spatial.distance import cdist
 import myCrpFunctions
 import os
+import pywt
+
+testShape = []
+shapePredict = []
+shape = 0
+
 
 #Make Folder
 def createFolder(directory):
@@ -14,11 +20,63 @@ def createFolder(directory):
     except OSError:
         print ('Error: Creating directory. ' +  directory)
 
+def writeContentToFile(pathFile, content):
+	file = open(pathFile, 'w')
+	for line in content:
+		file.write(line)
+	file.close()	
+
 def state_phase(v, start, dim, tau):
 	#v: vecto
 	#dim là số chiều (số phần tử)	
 	#tau là bước nhảy		
 	return [v[start + i*tau] for i in range(0, dim, 1)]
+
+def checkRecall(outputFolder = None):
+	TP=TN=FP=FN=1
+	floatShape = float(shape)
+
+	for i in range(len(testShape)):
+		if(floatShape == shapePredict[i]):
+			if (floatShape == testShape[i]):
+				TP += 1
+			else:
+				FP += 1
+		else:
+			if (floatShape != testShape[i]) :
+				TN += 1 
+			else:
+				FN += 1
+
+	print("TP: %5d, FP: %5d, FN: %5d, TN: %5d" % (TP, FP, FN, TN))
+	pi = TP/(TP+FP)
+	p = TP/(TP+FN)
+	f1 = 2*pi*p/(pi+p)
+	
+	print("pi = %2.2f" % pi)
+	print("p = %2.2f" % p)
+	print("f1 = %2.2f" % f1)
+
+	if (outputFolder != None):
+		print(outputFolder)
+		import time
+		import datetime
+		checkID = datetime.datetime.fromtimestamp(time.time()).strftime('%d/%m/%Y::%Hh%Mp%Ss')
+
+		content = ["{}\n{}".format(checkID, outputFolder)]
+		content.append('\n TP: {:5}\n FP: {:5}\n FN: {:5}\n TN: {:5}\n '.format(TP, FP, FN, TN))
+		content.append('pi = {:2.2}\n '.format( pi))
+		content.append('p = {:2.2}\n '.format( p))
+		content.append('f1 = {:2.2}\n '.format( f1))
+		pathOut = outputFolder + "readme.txt"
+		writeContentToFile(pathOut, content)
+
+
+	
+
+def refreshPredict():
+	for i in range(len(shapePredict)):
+		shapePredict[i] = 0
 
 # def SyncPredictToTestArr(indexSet, dataSet):
 # 	# Lấy các giá trị của dataSet tại các index liên tiếp trong indexSet
@@ -145,6 +203,10 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 				arr.append(None)
 			else:
 				arr.append(testSet[indexSampleOrigin[i][j]])
+				try:
+					shapePredict[indexSampleOrigin[i][j]] = shape
+				except (IndexError):
+					print("^v^v^v^v^v^v^v^v^v^v^v^v^v^v^indexError: {} ^v^v^v^v^v^v^v^v^v^v^v^v^v^v^" % (indexSampleOrigin[i][j]))
 
 		valueOfSample.append(arr)
 
@@ -159,6 +221,7 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 		# f_line.set_size_inches(1080, 720)
 		for i in range(0, len(valueOfSample)):
 			plt.plot( valueOfSample[i], ':', label=i)
+
 		plt.plot(trainSet, 'r', label='train')
 		plt.legend(loc=0)
 		plt.xlabel('index')
@@ -174,67 +237,122 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 
 	return f_line
 
+def makeTestFeature(trainSet, testSet, dim=3, tau=2, epsilon=0.0055, lambd=3, percent=1, distNorm = 1, pathFolder = "result/", formatSave = ".png", trainSetID = None):
+	
+	createFolder(pathFolder)
+	if (trainSetID == None):
+		import time
+		import datetime
+		trainSetID = datetime.datetime.fromtimestamp(time.time()).strftime('%Y%m%d%Hh%Mp%S')
 
+	numSample = len(trainSet)
+	title = "IDtrain_" + str(trainSetID) + "_" + str(numSample) + " - dim_" + str(dim) + " - epsil_" + str(epsilon) + " - lambd_" + str(lambd)
+	print("\n------------------------------------------------", title,"------------------------------------------------\n")
+
+	pathSave = pathFolder + title + formatSave
+	print("---------------------------", title, "---------------------------\n")
+
+	f2 = predict_diagonal(trainSet, testSet,
+	 						dim=dim, tau=tau, epsilon=epsilon, lambd=lambd, percent=percent, distNorm=distNorm,
+	 						titleOfGraph = title,  figureName = title, pathSaveFigure = pathSave)
+
+def makeTestFeatureZoom(trainSet, testSet, dim=3, tau=2, epsilon=0.0055, lambd=3, percent=1, distNorm = 1, pathFolder = "result/", formatSave = ".png", trainSetID = None):
+	
+	createFolder(pathFolder)
+	if (trainSetID == None):
+		import time
+		import datetime
+		trainSetID = datetime.datetime.fromtimestamp(time.time()).strftime('%Y%m%d%Hh%Mp%S')
+
+	numSample = 45
+	for i in range (0, len(trainSet), 50):
+		title = "IDtrain_" + str(trainSetID) + "_" + str(i) + " - dim_" + str(dim) + " - epsil_" + str(epsilon) + " - lambd_" + str(lambd)
+		print("\n------------------------------------------------", title,"------------------------------------------------\n")
+
+		pathSave = pathFolder + title + formatSave
+
+		trainSetZoom = trainSet[i:i+numSample]
+		if (len(trainSetZoom) > dim*tau):
+			f2 = predict_diagonal(trainSetZoom, testSet,
+			 						dim=dim, tau=tau, epsilon=epsilon, lambd=lambd, percent=percent, distNorm=distNorm,
+			 						titleOfGraph = title,  figureName = title, pathSaveFigure = pathSave)
+
+def veDoThiTatCaTrainShape(dataSet, titleOfGraph = "Autumn in my heart"):
+	for set in dataSet:
+		f_line = plt.figure(titleOfGraph, figsize = (12.8, 7.2), dpi = 100)
+		plt.plot(set)
+		plt.title(titleOfGraph)
+	
+	return f_line
+	
 ###############################-----________MAIN________-----###############################
 
 if (__name__ == "__main__"):
 
-	indexOfCol = 8
-	print("indexOfCol: ", indexOfCol)
-
-	dataTrain = myCrpFunctions.readCSVFile("data/1.csv", indexOfCol)
-	dataTest = myCrpFunctions.readCSVFile("data/2.csv", indexOfCol)
-	dataTest += (myCrpFunctions.readCSVFile("data/3.csv", indexOfCol))
-	
-	# dataTest += (myCrpFunctions.readCSVFile("data/5.csv", indexOfCol))
-	# dataTest += (myCrpFunctions.readCSVFile("data/6.csv", indexOfCol))
-	
-
-	if (min(dataTrain) > min(dataTest)) :
-		minOfNorm = min(dataTest) 
-	else: 
-		minOfNorm = min(dataTrain) 
-
-	if max(dataTrain) < max(dataTest) : 
-		maxOfNorm = max(dataTest) 
-	else: 
-		maxOfNorm = max(dataTrain) 
-	
-	trainSet = myCrpFunctions.ConvertSetNumber(dataTrain, minOfSet = minOfNorm, maxOfSet = maxOfNorm)
-	testSet = myCrpFunctions.ConvertSetNumber(dataTest, minOfSet = minOfNorm, maxOfSet = maxOfNorm)
-
-	print("len(trainSet): ", len(trainSet))
-	print("len(testSet): ", len(testSet))
-	
-	numSample = 45
-	myLambd=3
-	myDim=4
-	distNorm = 1
+	myLambd=2
+	myDim=3
+	distNorm = 2
 	tau = 2
 	formatSave = ".png"
+	epsilon = 0.009
+	pathFolder = "noSmoothingZoom/"
+	# checkRecall(pathFolder)
 
-	pathFolder = "output03012019/" + "minkowski_" + str(distNorm) + " - tau_" + str(tau) + "/"
+	fileName = ["RBA-3P_RBA-3P.csv",
+			"RBA-6P_RBA-6P.csv",
+			"RBA-12PST4_RBA-12PST4.csv",
+			"RUBY-1X_RUBY-1X_1.csv",
+			"RUBY-4X_RUBY-4X_1.csv",
+			"TN-3X_TN-3X.csv"]
 
-	for markEpsilon in range(85, 1, -5):
-		epsilon = float(markEpsilon/10000);
-		
-		subFolderName = "col_" + str(indexOfCol) + " - dim_" + str(myDim) + " - numSamp_" + str(numSample) + " - epsilon_" + str(epsilon)
+	path = [("data/" + name) for name in fileName]
 
-		print("\n------------------------------------------------", subFolderName,"------------------------------------------------\n")
-		pathNewFolder = pathFolder + subFolderName + "/"
-		createFolder(pathNewFolder)
+	shape = 2
+	indexColOfShape = 3
 
-		for start in range(2180, len(trainSet), numSample - myLambd):
-			finish = start+numSample
-			title = "index_" + str(start) + " - num_" + str(numSample) + " - epsil_" + str(epsilon)
+	indexColFeature = 2
 
-			pathSave = pathNewFolder + title + formatSave
-			print("---------------------------", title, "---------------------------\n")
+	allTrainSet, minOfTrain, maxOfTrain = myCrpFunctions.readCSVFileByShape(path[0], shape, indexColFeature, indexColOfShape)
 
-			f2 = predict_diagonal(trainSet[start:finish], testSet ,
-			 						dim=myDim, tau=tau, epsilon=epsilon, lambd=myLambd, percent=1, distNorm=distNorm, titleOfGraph = title,  figureName = title, pathSaveFigure = pathSave)
+	for i in range(1, 5):
+		allTrainSetI, minOfTrainI, maxOfTrainI = myCrpFunctions.readCSVFileByShape(path[i], shape, indexColFeature, indexColOfShape)
+		allTrainSet += allTrainSetI
+		if (minOfTrainI < minOfTrain) :
+			minOfTrain = minOfTrainI
+		if (maxOfTrainI > maxOfTrain) :
+			maxOfTrain = maxOfTrainI
+	
+	# dataTest = myCrpFunctions.readCSVFile(path[5], indexColFeature)
 
-			# plt.show()
-	print("\n------------------------------------------Xong!------------------------------------------")
-		
-		
+	dataTest, testShape = myCrpFunctions.readCSVFileForTest(path[5], indexColFeature)
+	shapePredict = [0 for i in range(len(testShape))]
+
+	print("data: ", len(dataTest), " Pre: ", len(shapePredict), " shape: ")
+
+	if (minOfTrain > min(dataTest)) :
+		minOfNorm = min(dataTest)
+	else: 
+		minOfNorm = minOfTrain
+
+	if maxOfTrain < max(dataTest) : 
+		maxOfNorm = max(dataTest) 
+	else: 
+		maxOfNorm = maxOfTrain 
+
+	for i in range(len(allTrainSet)):
+		allTrainSet[i] = myCrpFunctions.ConvertSetNumber(allTrainSet[i], minOfSet = minOfNorm, maxOfSet = maxOfNorm)
+	testSet = myCrpFunctions.ConvertSetNumber(dataTest, minOfSet = minOfNorm, maxOfSet = maxOfNorm)
+
+	print("len(trainSet): ", len(allTrainSet))
+	print("len(testSet): ", len(testSet))
+
+	
+
+'''
+	for i in range(0, len(allTrainSet)):
+		if (len(allTrainSet[i]) > myDim*tau):
+			makeTestFeatureZoom(allTrainSet[i], testSet, 
+							dim= myDim, tau= tau, epsilon= epsilon, lambd= myLambd, percent=1, distNorm = distNorm, 
+							pathFolder = "noSmoothingZoom/", formatSave = ".png", trainSetID = i)
+	checkRecall(pathFolder)
+'''

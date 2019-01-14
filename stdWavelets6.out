@@ -1,0 +1,2435 @@
+data:  7554  Pre:  7554  shape: 
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+min:  34.4162
+max:  191.5849
+len(trainSet):  27
+len(testSet):  7554
+
+------------------------------------------------ IDtrain_0_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00045893304020175134
+epsilon:  0.0085
+r_dist max 1.667719513313622
+lambd:  2
+_________num predict:  6
+
+------------------------------------------------ IDtrain_0_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00017296034783516665
+epsilon:  0.0085
+r_dist max 1.732897245886524
+lambd:  2
+_________num predict:  5
+
+------------------------------------------------ IDtrain_0_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0014541804260231265
+epsilon:  0.0085
+r_dist max 1.6851452522470667
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_0_150 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (31, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (31, 3806)
+r_dist min 0.0011752982778347023
+epsilon:  0.0085
+r_dist max 1.4661189442451399
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_1_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0001950514330716365
+epsilon:  0.0085
+r_dist max 1.422449983645715
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_1_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0013852429652968894
+epsilon:  0.0085
+r_dist max 1.4409496105817445
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_2_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0006093735606300698
+epsilon:  0.0085
+r_dist max 1.5645278851558673
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_2_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0006129673697528976
+epsilon:  0.0085
+r_dist max 1.5559691866948433
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_3_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0011912214795490013
+epsilon:  0.0085
+r_dist max 1.4844538985094184
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_3_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0009593662909228263
+epsilon:  0.0085
+r_dist max 1.5197563327840125
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_4_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (30, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (30, 3806)
+r_dist min 0.005426985748589389
+epsilon:  0.0085
+r_dist max 1.5526370972558963
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_5_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (30, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (30, 3806)
+r_dist min 0.0025273630043940085
+epsilon:  0.0085
+r_dist max 1.6090879359377188
+lambd:  2
+_________num predict:  29
+
+------------------------------------------------ IDtrain_6_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0011587724230750858
+epsilon:  0.0085
+r_dist max 1.615511141966183
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_6_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0005440869379124858
+epsilon:  0.0085
+r_dist max 1.661517131753277
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_6_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.001026424089091895
+epsilon:  0.0085
+r_dist max 1.7128388922646658
+lambd:  2
+_________num predict:  8
+
+------------------------------------------------ IDtrain_6_150 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0010219858195066062
+epsilon:  0.0085
+r_dist max 1.5143449357381182
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_7_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0003809140520678952
+epsilon:  0.0085
+r_dist max 1.4860216866066547
+lambd:  2
+_________num predict:  10
+
+------------------------------------------------ IDtrain_7_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (35, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (35, 3806)
+r_dist min 0.00083871098429963
+epsilon:  0.0085
+r_dist max 1.4626846679134524
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_8_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0008629422161016057
+epsilon:  0.0085
+r_dist max 1.590504633571279
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_8_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (6, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (6, 3806)
+r_dist min 0.0013796521175195844
+epsilon:  0.0085
+r_dist max 1.5750272969809225
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_9_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.000712900002957492
+epsilon:  0.0085
+r_dist max 1.4663348429431284
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_9_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (26, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (26, 3806)
+r_dist min 0.001148236622481566
+epsilon:  0.0085
+r_dist max 1.4341959632817523
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_10_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0011514994811818414
+epsilon:  0.0085
+r_dist max 1.5174438108479018
+lambd:  2
+_________num predict:  6
+
+------------------------------------------------ IDtrain_10_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0008480934848762023
+epsilon:  0.0085
+r_dist max 1.4209556918939785
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_10_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0013848574698823713
+epsilon:  0.0085
+r_dist max 1.3592780759948826
+lambd:  2
+_________num predict:  5
+
+------------------------------------------------ IDtrain_10_150 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (7, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (7, 3806)
+r_dist min 0.0038366898881316775
+epsilon:  0.0085
+r_dist max 1.2224564224662755
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_11_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0010337695282708907
+epsilon:  0.0085
+r_dist max 1.617655984689352
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_11_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.001056792581068916
+epsilon:  0.0085
+r_dist max 1.6425880209246513
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_11_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (30, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (30, 3806)
+r_dist min 0.0005973192594063243
+epsilon:  0.0085
+r_dist max 1.228880858842242
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_12_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.000978142780053414
+epsilon:  0.0085
+r_dist max 1.5511640636362491
+lambd:  2
+_________num predict:  5
+
+------------------------------------------------ IDtrain_12_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0008993448484244641
+epsilon:  0.0085
+r_dist max 1.5234843049007112
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_12_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (6, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (6, 3806)
+r_dist min 0.001319765727350098
+epsilon:  0.0085
+r_dist max 1.297002311084364
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_13_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0017343441514207358
+epsilon:  0.0085
+r_dist max 1.3545681826139293
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_13_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0005256036475577173
+epsilon:  0.0085
+r_dist max 1.4499667756827064
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_13_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (14, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (14, 3806)
+r_dist min 0.0022828460966033462
+epsilon:  0.0085
+r_dist max 1.1723772504592094
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_14_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0007722749905171472
+epsilon:  0.0085
+r_dist max 1.3283238710909215
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_14_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0004628017960791163
+epsilon:  0.0085
+r_dist max 1.3719953483265834
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_14_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (13, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (13, 3806)
+r_dist min 0.0011088766331086592
+epsilon:  0.0085
+r_dist max 1.2802746035981416
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_15_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0002164348938717121
+epsilon:  0.0085
+r_dist max 1.208896059940157
+lambd:  2
+_________num predict:  44
+
+------------------------------------------------ IDtrain_15_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0002461653338780797
+epsilon:  0.0085
+r_dist max 1.2654932684772495
+lambd:  2
+_________num predict:  46
+
+------------------------------------------------ IDtrain_15_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (20, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (20, 3806)
+r_dist min 0.0011512069746457511
+epsilon:  0.0085
+r_dist max 1.0375112748408888
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_16_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.001407341519716
+epsilon:  0.0085
+r_dist max 1.2066134420081194
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_16_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (25, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (25, 3806)
+r_dist min 0.0017409804305519594
+epsilon:  0.0085
+r_dist max 1.1408575979122608
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_17_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.03242499949216377
+epsilon:  0.0085
+r_dist max 1.8786705424495058
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_18_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0009400494793463802
+epsilon:  0.0085
+r_dist max 1.2652028690296895
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_18_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (21, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (21, 3806)
+r_dist min 0.0011043430788131145
+epsilon:  0.0085
+r_dist max 1.2041944518074736
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_19_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.000401275398225317
+epsilon:  0.0085
+r_dist max 1.2632299430439795
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_19_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (6, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (6, 3806)
+r_dist min 0.0008517992897353541
+epsilon:  0.0085
+r_dist max 1.110295412607512
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_20_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (40, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (40, 3806)
+r_dist min 0.0015199604011955838
+epsilon:  0.0085
+r_dist max 1.130439148744329
+lambd:  2
+_________num predict:  12
+
+------------------------------------------------ IDtrain_21_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 7.090879894495827e-05
+epsilon:  0.0085
+r_dist max 1.7135349416977406
+lambd:  2
+_________num predict:  8
+
+------------------------------------------------ IDtrain_21_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (9, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (9, 3806)
+r_dist min 0.000957190289984735
+epsilon:  0.0085
+r_dist max 1.5828349432710633
+lambd:  2
+_________num predict:  5
+
+------------------------------------------------ IDtrain_22_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.000443755755668046
+epsilon:  0.0085
+r_dist max 1.598223943193247
+lambd:  2
+_________num predict:  35
+
+------------------------------------------------ IDtrain_22_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.000661786168096334
+epsilon:  0.0085
+r_dist max 1.6705249170352507
+lambd:  2
+_________num predict:  12
+
+------------------------------------------------ IDtrain_22_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (30, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (30, 3806)
+r_dist min 0.00026271899245730547
+epsilon:  0.0085
+r_dist max 1.599975290492615
+lambd:  2
+_________num predict:  13
+
+------------------------------------------------ IDtrain_23_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00032458618112936294
+epsilon:  0.0085
+r_dist max 1.7574035964006878
+lambd:  2
+_________num predict:  14
+
+------------------------------------------------ IDtrain_23_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0003789697228818108
+epsilon:  0.0085
+r_dist max 1.8302483427593959
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_23_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (3, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (3, 3806)
+r_dist min 0.004900243010798893
+epsilon:  0.0085
+r_dist max 1.812706366555485
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_24_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00036776444116394383
+epsilon:  0.0085
+r_dist max 1.841538762074204
+lambd:  2
+_________num predict:  18
+
+------------------------------------------------ IDtrain_24_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (30, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (30, 3806)
+r_dist min 0.00032948994274786434
+epsilon:  0.0085
+r_dist max 1.2429841522173712
+lambd:  2
+_________num predict:  38
+
+------------------------------------------------ IDtrain_25_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00016579734128171074
+epsilon:  0.0085
+r_dist max 1.2923730585056197
+lambd:  2
+_________num predict:  31
+
+------------------------------------------------ IDtrain_25_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (9, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (9, 3806)
+r_dist min 0.0004077458354664263
+epsilon:  0.0085
+r_dist max 1.1761673251543123
+lambd:  2
+_________num predict:  7
+
+------------------------------------------------ IDtrain_26_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00033387410837245067
+epsilon:  0.0085
+r_dist max 1.6986204575245265
+lambd:  2
+_________num predict:  56
+
+------------------------------------------------ IDtrain_26_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (21, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (21, 3806)
+r_dist min 0.0004960733143107455
+epsilon:  0.0085
+r_dist max 1.4645821375524297
+lambd:  2
+_________num predict:  5
+TP:    83, FP:  1825, FN:   193, TN:  5457
+pi = 0.04350
+p = 0.30072
+f1 = 0.07601
+1401_waveletSmoothing/Type_dmey-Epsilon_0.0085/
+
+------------------------------------------------ IDtrain_0_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00045893304020175134
+epsilon:  0.005
+r_dist max 1.667719513313622
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_0_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00017296034783516665
+epsilon:  0.005
+r_dist max 1.732897245886524
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_0_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0014541804260231265
+epsilon:  0.005
+r_dist max 1.6851452522470667
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_0_150 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (31, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (31, 3806)
+r_dist min 0.0011752982778347023
+epsilon:  0.005
+r_dist max 1.4661189442451399
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_1_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0001950514330716365
+epsilon:  0.005
+r_dist max 1.422449983645715
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_1_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0013852429652968894
+epsilon:  0.005
+r_dist max 1.4409496105817445
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_2_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0006093735606300698
+epsilon:  0.005
+r_dist max 1.5645278851558673
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_2_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0006129673697528976
+epsilon:  0.005
+r_dist max 1.5559691866948433
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_3_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0011912214795490013
+epsilon:  0.005
+r_dist max 1.4844538985094184
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_3_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0009593662909228263
+epsilon:  0.005
+r_dist max 1.5197563327840125
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_4_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (30, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (30, 3806)
+r_dist min 0.005426985748589389
+epsilon:  0.005
+r_dist max 1.5526370972558963
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_5_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (30, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (30, 3806)
+r_dist min 0.0025273630043940085
+epsilon:  0.005
+r_dist max 1.6090879359377188
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_6_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0011587724230750858
+epsilon:  0.005
+r_dist max 1.615511141966183
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_6_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0005440869379124858
+epsilon:  0.005
+r_dist max 1.661517131753277
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_6_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.001026424089091895
+epsilon:  0.005
+r_dist max 1.7128388922646658
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_6_150 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0010219858195066062
+epsilon:  0.005
+r_dist max 1.5143449357381182
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_7_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0003809140520678952
+epsilon:  0.005
+r_dist max 1.4860216866066547
+lambd:  2
+_________num predict:  6
+
+------------------------------------------------ IDtrain_7_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (35, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (35, 3806)
+r_dist min 0.00083871098429963
+epsilon:  0.005
+r_dist max 1.4626846679134524
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_8_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0008629422161016057
+epsilon:  0.005
+r_dist max 1.590504633571279
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_8_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (6, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (6, 3806)
+r_dist min 0.0013796521175195844
+epsilon:  0.005
+r_dist max 1.5750272969809225
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_9_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.000712900002957492
+epsilon:  0.005
+r_dist max 1.4663348429431284
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_9_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (26, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (26, 3806)
+r_dist min 0.001148236622481566
+epsilon:  0.005
+r_dist max 1.4341959632817523
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_10_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0011514994811818414
+epsilon:  0.005
+r_dist max 1.5174438108479018
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_10_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0008480934848762023
+epsilon:  0.005
+r_dist max 1.4209556918939785
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_10_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0013848574698823713
+epsilon:  0.005
+r_dist max 1.3592780759948826
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_10_150 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (7, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (7, 3806)
+r_dist min 0.0038366898881316775
+epsilon:  0.005
+r_dist max 1.2224564224662755
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_11_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0010337695282708907
+epsilon:  0.005
+r_dist max 1.617655984689352
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_11_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.001056792581068916
+epsilon:  0.005
+r_dist max 1.6425880209246513
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_11_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (30, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (30, 3806)
+r_dist min 0.0005973192594063243
+epsilon:  0.005
+r_dist max 1.228880858842242
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_12_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.000978142780053414
+epsilon:  0.005
+r_dist max 1.5511640636362491
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_12_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0008993448484244641
+epsilon:  0.005
+r_dist max 1.5234843049007112
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_12_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (6, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (6, 3806)
+r_dist min 0.001319765727350098
+epsilon:  0.005
+r_dist max 1.297002311084364
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_13_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0017343441514207358
+epsilon:  0.005
+r_dist max 1.3545681826139293
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_13_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0005256036475577173
+epsilon:  0.005
+r_dist max 1.4499667756827064
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_13_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (14, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (14, 3806)
+r_dist min 0.0022828460966033462
+epsilon:  0.005
+r_dist max 1.1723772504592094
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_14_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0007722749905171472
+epsilon:  0.005
+r_dist max 1.3283238710909215
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_14_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0004628017960791163
+epsilon:  0.005
+r_dist max 1.3719953483265834
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_14_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (13, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (13, 3806)
+r_dist min 0.0011088766331086592
+epsilon:  0.005
+r_dist max 1.2802746035981416
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_15_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0002164348938717121
+epsilon:  0.005
+r_dist max 1.208896059940157
+lambd:  2
+_________num predict:  11
+
+------------------------------------------------ IDtrain_15_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0002461653338780797
+epsilon:  0.005
+r_dist max 1.2654932684772495
+lambd:  2
+_________num predict:  8
+
+------------------------------------------------ IDtrain_15_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (20, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (20, 3806)
+r_dist min 0.0011512069746457511
+epsilon:  0.005
+r_dist max 1.0375112748408888
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_16_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.001407341519716
+epsilon:  0.005
+r_dist max 1.2066134420081194
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_16_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (25, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (25, 3806)
+r_dist min 0.0017409804305519594
+epsilon:  0.005
+r_dist max 1.1408575979122608
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_17_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.03242499949216377
+epsilon:  0.005
+r_dist max 1.8786705424495058
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_18_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0009400494793463802
+epsilon:  0.005
+r_dist max 1.2652028690296895
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_18_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (21, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (21, 3806)
+r_dist min 0.0011043430788131145
+epsilon:  0.005
+r_dist max 1.2041944518074736
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_19_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.000401275398225317
+epsilon:  0.005
+r_dist max 1.2632299430439795
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_19_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (6, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (6, 3806)
+r_dist min 0.0008517992897353541
+epsilon:  0.005
+r_dist max 1.110295412607512
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_20_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (40, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (40, 3806)
+r_dist min 0.0015199604011955838
+epsilon:  0.005
+r_dist max 1.130439148744329
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_21_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 7.090879894495827e-05
+epsilon:  0.005
+r_dist max 1.7135349416977406
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_21_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (9, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (9, 3806)
+r_dist min 0.000957190289984735
+epsilon:  0.005
+r_dist max 1.5828349432710633
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_22_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.000443755755668046
+epsilon:  0.005
+r_dist max 1.598223943193247
+lambd:  2
+_________num predict:  12
+
+------------------------------------------------ IDtrain_22_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.000661786168096334
+epsilon:  0.005
+r_dist max 1.6705249170352507
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_22_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (30, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (30, 3806)
+r_dist min 0.00026271899245730547
+epsilon:  0.005
+r_dist max 1.599975290492615
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_23_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00032458618112936294
+epsilon:  0.005
+r_dist max 1.7574035964006878
+lambd:  2
+_________num predict:  6
+
+------------------------------------------------ IDtrain_23_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.0003789697228818108
+epsilon:  0.005
+r_dist max 1.8302483427593959
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_23_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (3, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (3, 3806)
+r_dist min 0.004900243010798893
+epsilon:  0.005
+r_dist max 1.812706366555485
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_24_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00036776444116394383
+epsilon:  0.005
+r_dist max 1.841538762074204
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_24_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (30, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (30, 3806)
+r_dist min 0.00032948994274786434
+epsilon:  0.005
+r_dist max 1.2429841522173712
+lambd:  2
+_________num predict:  9
+
+------------------------------------------------ IDtrain_25_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00016579734128171074
+epsilon:  0.005
+r_dist max 1.2923730585056197
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_25_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (9, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (9, 3806)
+r_dist min 0.0004077458354664263
+epsilon:  0.005
+r_dist max 1.1761673251543123
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_26_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (44, 3806)
+r_dist min 0.00033387410837245067
+epsilon:  0.005
+r_dist max 1.6986204575245265
+lambd:  2
+_________num predict:  12
+
+------------------------------------------------ IDtrain_26_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (21, 2)
+vectors_test.shape:  (3806, 2)
+r_dist.shape:  (21, 3806)
+r_dist min 0.0004960733143107455
+epsilon:  0.005
+r_dist max 1.4645821375524297
+lambd:  2
+_________num predict:  0
+TP:    21, FP:   470, FN:   255, TN:  6812
+pi = 0.04277
+p = 0.07609
+f1 = 0.05476
+1401_waveletSmoothing/Type_dmey-Epsilon_0.005/
+
+------------------------------------------------ IDtrain_0_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0008901753448238214
+epsilon:  0.0085
+r_dist max 1.6568983370567874
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_0_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0007202616290188814
+epsilon:  0.0085
+r_dist max 1.7253278880373493
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_0_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00033960290634697446
+epsilon:  0.0085
+r_dist max 1.6252567846265376
+lambd:  2
+_________num predict:  8
+
+------------------------------------------------ IDtrain_0_150 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+
+------------------------------------------------ IDtrain_1_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0005955528694429099
+epsilon:  0.0085
+r_dist max 1.5181036416662972
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_1_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (14, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (14, 3776)
+r_dist min 0.0014200006653443367
+epsilon:  0.0085
+r_dist max 1.3366512149078706
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_2_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0014252999757051418
+epsilon:  0.0085
+r_dist max 1.5479653666647968
+lambd:  2
+_________num predict:  7
+
+------------------------------------------------ IDtrain_2_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (18, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (18, 3776)
+r_dist min 0.0019116692060991852
+epsilon:  0.0085
+r_dist max 1.4669591517112035
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_3_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00033427827186112587
+epsilon:  0.0085
+r_dist max 1.502191173486329
+lambd:  2
+_________num predict:  6
+
+------------------------------------------------ IDtrain_3_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (16, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (16, 3776)
+r_dist min 0.0006922142654168232
+epsilon:  0.0085
+r_dist max 1.3802071839117238
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_6_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00040882425879191884
+epsilon:  0.0085
+r_dist max 1.599978660558517
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_6_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0017346649805866348
+epsilon:  0.0085
+r_dist max 1.6929092792681784
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_6_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0010886658310640396
+epsilon:  0.0085
+r_dist max 1.686630548848083
+lambd:  2
+_________num predict:  10
+
+------------------------------------------------ IDtrain_6_150 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (18, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (18, 3776)
+r_dist min 8.535006002742178e-05
+epsilon:  0.0085
+r_dist max 1.4973821912869352
+lambd:  2
+_________num predict:  5
+
+------------------------------------------------ IDtrain_7_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00015027368147229713
+epsilon:  0.0085
+r_dist max 1.4821204015046379
+lambd:  2
+_________num predict:  6
+
+------------------------------------------------ IDtrain_7_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (5, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (5, 3776)
+r_dist min 0.0023594536740783253
+epsilon:  0.0085
+r_dist max 1.357773268258246
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_8_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (26, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (26, 3776)
+r_dist min 0.0013362258551313832
+epsilon:  0.0085
+r_dist max 1.575826964913826
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_9_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0009330429655322119
+epsilon:  0.0085
+r_dist max 1.4541109104092198
+lambd:  2
+_________num predict:  5
+
+------------------------------------------------ IDtrain_10_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0005587000755218804
+epsilon:  0.0085
+r_dist max 1.5140149743852116
+lambd:  2
+_________num predict:  7
+
+------------------------------------------------ IDtrain_10_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0009160151028304783
+epsilon:  0.0085
+r_dist max 1.3516973835234438
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_10_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (27, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (27, 3776)
+r_dist min 0.0006916157287402432
+epsilon:  0.0085
+r_dist max 1.3086418809151747
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_11_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00020444666036389242
+epsilon:  0.0085
+r_dist max 1.6220706370498403
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_11_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0007589405802863429
+epsilon:  0.0085
+r_dist max 1.49571255079518
+lambd:  2
+_________num predict:  8
+
+------------------------------------------------ IDtrain_11_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+
+------------------------------------------------ IDtrain_12_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0011062095123220823
+epsilon:  0.0085
+r_dist max 1.4889127817388452
+lambd:  2
+_________num predict:  5
+
+------------------------------------------------ IDtrain_12_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (26, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (26, 3776)
+r_dist min 0.00048707631653167985
+epsilon:  0.0085
+r_dist max 1.5007600536429009
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_13_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00041434117248309756
+epsilon:  0.0085
+r_dist max 1.4354101130517967
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_13_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (34, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (34, 3776)
+r_dist min 0.0005663069692158928
+epsilon:  0.0085
+r_dist max 1.354856608946852
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_14_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00014847959577036284
+epsilon:  0.0085
+r_dist max 1.4207361235556057
+lambd:  2
+_________num predict:  5
+
+------------------------------------------------ IDtrain_14_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (33, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (33, 3776)
+r_dist min 0.0006871192169411526
+epsilon:  0.0085
+r_dist max 1.2879674554587035
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_15_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0004758896207597017
+epsilon:  0.0085
+r_dist max 1.2644285380448188
+lambd:  2
+_________num predict:  42
+
+------------------------------------------------ IDtrain_15_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (40, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (40, 3776)
+r_dist min 0.0003002906572827706
+epsilon:  0.0085
+r_dist max 1.200432400329727
+lambd:  2
+_________num predict:  21
+
+------------------------------------------------ IDtrain_16_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.002112607974540235
+epsilon:  0.0085
+r_dist max 1.2048241822593941
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_17_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (14, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (14, 3776)
+r_dist min 0.05416693000990583
+epsilon:  0.0085
+r_dist max 1.8725895828135477
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_18_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (41, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (41, 3776)
+r_dist min 0.0008975314473624142
+epsilon:  0.0085
+r_dist max 1.2551061516381439
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_19_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (26, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (26, 3776)
+r_dist min 0.001422675694622411
+epsilon:  0.0085
+r_dist max 1.239352566826446
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_20_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (10, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (10, 3776)
+r_dist min 0.0007681045569631845
+epsilon:  0.0085
+r_dist max 1.106671436826032
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_21_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (29, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (29, 3776)
+r_dist min 0.0003386527008276935
+epsilon:  0.0085
+r_dist max 1.7104229647846367
+lambd:  2
+_________num predict:  6
+
+------------------------------------------------ IDtrain_22_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.000954166314720863
+epsilon:  0.0085
+r_dist max 1.6853891649439854
+lambd:  2
+_________num predict:  18
+
+------------------------------------------------ IDtrain_22_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 9.755844552172685e-05
+epsilon:  0.0085
+r_dist max 1.627279017271865
+lambd:  2
+_________num predict:  5
+
+------------------------------------------------ IDtrain_22_100 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+
+------------------------------------------------ IDtrain_23_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00038826659623914547
+epsilon:  0.0085
+r_dist max 1.7656145205286926
+lambd:  2
+_________num predict:  13
+
+------------------------------------------------ IDtrain_23_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (23, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (23, 3776)
+r_dist min 0.004399373280740328
+epsilon:  0.0085
+r_dist max 1.8175444141880688
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_24_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00044762437318130436
+epsilon:  0.0085
+r_dist max 1.8385845674322683
+lambd:  2
+_________num predict:  27
+
+------------------------------------------------ IDtrain_24_50 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+
+------------------------------------------------ IDtrain_25_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (29, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (29, 3776)
+r_dist min 0.00014583800244356233
+epsilon:  0.0085
+r_dist max 1.2908565168806867
+lambd:  2
+_________num predict:  30
+
+------------------------------------------------ IDtrain_26_0 - dim_2 - epsil_0.0085 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (41, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (41, 3776)
+r_dist min 0.000407446274839739
+epsilon:  0.0085
+r_dist max 1.57554932317005
+lambd:  2
+_________num predict:  38
+TP:    73, FP:  1387, FN:   203, TN:  5895
+pi = 0.05000
+p = 0.26449
+f1 = 0.08410
+1401_waveletSmoothing/Type_haar-Epsilon_0.0085/
+
+------------------------------------------------ IDtrain_0_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0008901753448238214
+epsilon:  0.005
+r_dist max 1.6568983370567874
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_0_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0007202616290188814
+epsilon:  0.005
+r_dist max 1.7253278880373493
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_0_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00033960290634697446
+epsilon:  0.005
+r_dist max 1.6252567846265376
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_0_150 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+
+------------------------------------------------ IDtrain_1_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0005955528694429099
+epsilon:  0.005
+r_dist max 1.5181036416662972
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_1_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (14, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (14, 3776)
+r_dist min 0.0014200006653443367
+epsilon:  0.005
+r_dist max 1.3366512149078706
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_2_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0014252999757051418
+epsilon:  0.005
+r_dist max 1.5479653666647968
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_2_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (18, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (18, 3776)
+r_dist min 0.0019116692060991852
+epsilon:  0.005
+r_dist max 1.4669591517112035
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_3_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00033427827186112587
+epsilon:  0.005
+r_dist max 1.502191173486329
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_3_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (16, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (16, 3776)
+r_dist min 0.0006922142654168232
+epsilon:  0.005
+r_dist max 1.3802071839117238
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_6_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00040882425879191884
+epsilon:  0.005
+r_dist max 1.599978660558517
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_6_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0017346649805866348
+epsilon:  0.005
+r_dist max 1.6929092792681784
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_6_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0010886658310640396
+epsilon:  0.005
+r_dist max 1.686630548848083
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_6_150 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (18, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (18, 3776)
+r_dist min 8.535006002742178e-05
+epsilon:  0.005
+r_dist max 1.4973821912869352
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_7_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00015027368147229713
+epsilon:  0.005
+r_dist max 1.4821204015046379
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_7_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (5, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (5, 3776)
+r_dist min 0.0023594536740783253
+epsilon:  0.005
+r_dist max 1.357773268258246
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_8_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (26, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (26, 3776)
+r_dist min 0.0013362258551313832
+epsilon:  0.005
+r_dist max 1.575826964913826
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_9_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0009330429655322119
+epsilon:  0.005
+r_dist max 1.4541109104092198
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_10_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0005587000755218804
+epsilon:  0.005
+r_dist max 1.5140149743852116
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_10_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0009160151028304783
+epsilon:  0.005
+r_dist max 1.3516973835234438
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_10_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (27, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (27, 3776)
+r_dist min 0.0006916157287402432
+epsilon:  0.005
+r_dist max 1.3086418809151747
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_11_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00020444666036389242
+epsilon:  0.005
+r_dist max 1.6220706370498403
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_11_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0007589405802863429
+epsilon:  0.005
+r_dist max 1.49571255079518
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_11_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+
+------------------------------------------------ IDtrain_12_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0011062095123220823
+epsilon:  0.005
+r_dist max 1.4889127817388452
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_12_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (26, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (26, 3776)
+r_dist min 0.00048707631653167985
+epsilon:  0.005
+r_dist max 1.5007600536429009
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_13_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00041434117248309756
+epsilon:  0.005
+r_dist max 1.4354101130517967
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_13_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (34, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (34, 3776)
+r_dist min 0.0005663069692158928
+epsilon:  0.005
+r_dist max 1.354856608946852
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_14_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00014847959577036284
+epsilon:  0.005
+r_dist max 1.4207361235556057
+lambd:  2
+_________num predict:  2
+
+------------------------------------------------ IDtrain_14_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (33, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (33, 3776)
+r_dist min 0.0006871192169411526
+epsilon:  0.005
+r_dist max 1.2879674554587035
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_15_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.0004758896207597017
+epsilon:  0.005
+r_dist max 1.2644285380448188
+lambd:  2
+_________num predict:  4
+
+------------------------------------------------ IDtrain_15_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (40, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (40, 3776)
+r_dist min 0.0003002906572827706
+epsilon:  0.005
+r_dist max 1.200432400329727
+lambd:  2
+_________num predict:  3
+
+------------------------------------------------ IDtrain_16_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.002112607974540235
+epsilon:  0.005
+r_dist max 1.2048241822593941
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_17_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (14, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (14, 3776)
+r_dist min 0.05416693000990583
+epsilon:  0.005
+r_dist max 1.8725895828135477
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_18_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (41, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (41, 3776)
+r_dist min 0.0008975314473624142
+epsilon:  0.005
+r_dist max 1.2551061516381439
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_19_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (26, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (26, 3776)
+r_dist min 0.001422675694622411
+epsilon:  0.005
+r_dist max 1.239352566826446
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_20_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (10, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (10, 3776)
+r_dist min 0.0007681045569631845
+epsilon:  0.005
+r_dist max 1.106671436826032
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_21_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (29, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (29, 3776)
+r_dist min 0.0003386527008276935
+epsilon:  0.005
+r_dist max 1.7104229647846367
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_22_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.000954166314720863
+epsilon:  0.005
+r_dist max 1.6853891649439854
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_22_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 9.755844552172685e-05
+epsilon:  0.005
+r_dist max 1.627279017271865
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_22_100 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+
+------------------------------------------------ IDtrain_23_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00038826659623914547
+epsilon:  0.005
+r_dist max 1.7656145205286926
+lambd:  2
+_________num predict:  1
+
+------------------------------------------------ IDtrain_23_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (23, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (23, 3776)
+r_dist min 0.004399373280740328
+epsilon:  0.005
+r_dist max 1.8175444141880688
+lambd:  2
+_________num predict:  0
+
+------------------------------------------------ IDtrain_24_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (44, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (44, 3776)
+r_dist min 0.00044762437318130436
+epsilon:  0.005
+r_dist max 1.8385845674322683
+lambd:  2
+_________num predict:  7
+
+------------------------------------------------ IDtrain_24_50 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+
+------------------------------------------------ IDtrain_25_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (29, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (29, 3776)
+r_dist min 0.00014583800244356233
+epsilon:  0.005
+r_dist max 1.2908565168806867
+lambd:  2
+_________num predict:  7
+
+------------------------------------------------ IDtrain_26_0 - dim_2 - epsil_0.005 - lambd_2 ------------------------------------------------
+
+vectors_train.shape:  (41, 2)
+vectors_test.shape:  (3776, 2)
+r_dist.shape:  (41, 3776)
+r_dist min 0.000407446274839739
+epsilon:  0.005
+r_dist max 1.57554932317005
+lambd:  2
+_________num predict:  15
+TP:    25, FP:   355, FN:   251, TN:  6927
+pi = 0.06579
+p = 0.09058
+f1 = 0.07622
+1401_waveletSmoothing/Type_haar-Epsilon_0.005/

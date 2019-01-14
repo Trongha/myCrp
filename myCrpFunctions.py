@@ -8,9 +8,119 @@ def readCSVFile(path, indexOfCol = 0):
 		thisCSVFile = csv.reader(File)
 		for hang in thisCSVFile:
 			hang[indexOfCol] = float(hang[indexOfCol])
+			# print([indexOfCol])
 			if (hang[indexOfCol] > 0):
 				col.append(hang[indexOfCol])
 	return col
+
+
+def readCSVFileForTest(path, indexOfCol = 0):
+	col = []
+	shape = []
+	with open(path, 'r') as File:
+		thisCSVFile = csv.reader(File)
+		for hang in thisCSVFile:
+			hang[indexOfCol] = float(hang[indexOfCol])
+			# print([indexOfCol])
+			if (hang[indexOfCol] > 0):
+				col.append(hang[indexOfCol])
+				shape.append(float(hang[indexOfCol+1]))
+	return col, shape
+
+def readCSVFileByShape(path, shape, indexColOfFeature = 0, indexColOfShape = 1):
+
+	features = []
+	maxOfSet = minOfSet = 0
+
+	isShape = "false"
+	feature = []
+
+	with open(path, 'r') as File:
+		thisCSVFile = csv.reader(File)
+		for hang in thisCSVFile:
+			if (float(hang[indexColOfShape]) == shape):
+				if isShape == "false" :
+					feature = []
+					isShape = "true"
+
+				hang[indexColOfFeature] = float(hang[indexColOfFeature])
+				# print([indexColOfFeature])
+				if (hang[indexColOfFeature] > 0):
+					feature.append(hang[indexColOfFeature])
+			else:
+				if isShape == "true" :
+					features.append(feature)
+					minNow = min(feature)
+					maxNow = max(feature)
+
+					if (len(features)==1 or minOfSet > minNow):
+						minOfSet = minNow
+					if (len(features)==1 or maxOfSet < maxNow):
+						maxOfSet = maxNow
+
+				isShape = "false"
+
+	return features, minOfSet, maxOfSet
+
+def smoothingMovingAverage(dataSet, sizeWindow = 2):
+	if (len(dataSet) < 2*sizeWindow +1):
+		return dataSet
+	return [dataSet[i] for i in range(0,sizeWindow)] + [np.average(np.array(dataSet[i-sizeWindow:i+sizeWindow+1])) for i in range (sizeWindow, len(dataSet)-sizeWindow)] + [dataSet[i] for i in range(len(dataSet)-sizeWindow, len(dataSet))]
+
+def smoothListGaussian(list,degree=5):  
+
+    window=degree*2-1  
+
+    weight=np.array([1.0]*window)  
+
+    weightGauss=[]  
+
+    for i in range(window):  
+
+        i=i-degree+1  
+
+        frac=i/float(window)  
+
+        gauss=1/(np.exp((4*(frac))**2))  
+
+        weightGauss.append(gauss)  
+
+    weight=np.array(weightGauss)*weight  
+
+    smoothed=[0.0]*(len(list)-window)  
+
+    for i in range(len(smoothed)):  
+
+        smoothed[i]=sum(np.array(list[i:i+window])*weight)/sum(weight)  
+
+    return list[0: degree] + smoothed + list[len(list)-degree+1: len(list)]
+
+def smoothListTriangle(list,strippedXs=False,degree=5):  
+
+    weight=[]  
+
+    window=degree*2-1  
+
+    smoothed=[0.0]*(len(list)-window)  
+
+    for x in range(1,2*degree):weight.append(degree-abs(degree-x))  
+
+    w=np.array(weight)  
+
+    for i in range(len(smoothed)):  
+
+        smoothed[i]=sum(np.array(list[i:i+window])*w)/float(sum(w))  
+
+    return list[0: degree] + smoothed + list[len(list)-degree+1: len(list)]
+
+def Savitzky_GolaySmoothing(dataSet, sizeWindow):
+	return 0
+
+def waveletsmoothing(set, type):
+	import pywt
+	cA,_ = pywt.dwt(set, type)
+	return cA
+
 def lineGraph(ySet):
 	# print(ySet)
 	plt.plot(ySet, label = 'trainSet')
@@ -49,7 +159,7 @@ def crossRecurrencePlots(windowTitle, dataMatrixBinary, dotSize = 0, myTitle = '
 	hightOfData = len(dataMatrixBinary);
 	for y in range(hightOfData):
 		for x in range(len(dataMatrixBinary[y])):
-			if (dataMatrixBinary[y][x] == 1):
+			if (dataMatrixBinary[y][x] == -1):
 				dataX.append(x)
 				## append hight-y nếu muốn vẽ đồ thị đúng chiều như lưu trong ma trận
 				dataY.append( hightOfData - y -1)
@@ -59,34 +169,35 @@ def crossRecurrencePlots(windowTitle, dataMatrixBinary, dotSize = 0, myTitle = '
 	return scatterGraph(windowTitle , dataX, dataY, dotSize, myTitle , labelX , labelY )
 
 if (__name__ == '__main__'):
-	dataSet = readCSVFile("data/15_1-SD-2X-DEV_LQC.csv")
+
+	fileName = [
+			"RBA-3P_RBA-3P.csv",
+			"RBA-6P_RBA-6P.csv",
+			"RBA-12PST4_RBA-12PST4.csv",
+			"RUBY-1X_RUBY-1X_1.csv",
+			"RUBY-4X_RUBY-4X_1.csv",
+			"TN-3X_TN-3X.csv"]
+	path = []
+
+	for name in fileName:
+		path.append("data/" + name)
+
+	print(path[1])
+	trainSetByShape, minSet, maxSet = readCSVFileByShape(path[1], 2, 2, 3)
 	start = 0;
 
-	#### START-1X = 4840
-	#### START-2X = 8800/24037
-	#### START-3X = 8768/29721
-	#### START-5X = 0/9960
-	#### START-4X = 0/13060
-	#
-	# for i in range(0,len(dataSet)):
-	# 	if (dataSet[i] > 0):
-	# 		start = i;
-	# 		break
-	# 		
-	print(len(dataSet))			
-	# print("start: ", start)
-	# for start in range(100, 1000, 8):
-	# 	start = 132
-	# 	finish = start+16
-	# 	s = str(start) + " - " + str(finish)
-	# 	print(s)
-	# 	lineGraph(dataSet[start:finish])
+	print(minSet, maxSet)
 
-	a = np.random.randint(2, size = (18, 5));
-	print(a)
+	print(trainSetByShape[2])
 
-	f3 = crossRecurrencePlots('crpTest', a, dotSize = 10)
+	x = smoothingMovingAverage(trainSetByShape[2])
 
-	plt.show()
+	print(x)
+
+	print(len(trainSetByShape[2]))	
+	print(len(x))
+
+
+
 
 
