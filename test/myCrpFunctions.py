@@ -63,12 +63,62 @@ def readCSVFileByShape(path, shape, indexColOfFeature = 0, indexColOfShape = 1):
 	return features, minOfSet, maxOfSet
 
 def smoothingMovingAverage(dataSet, sizeWindow = 2):
-		return [np.average(np.array(dataSet[i-sizeWindow:i+sizeWindow+1])) for i in range (sizeWindow, len(dataSet)-sizeWindow)]
+	if (len(dataSet) < 2*sizeWindow +1):
+		return dataSet
+	return [dataSet[i] for i in range(0,sizeWindow)] + [np.average(np.array(dataSet[i-sizeWindow:i+sizeWindow+1])) for i in range (sizeWindow, len(dataSet)-sizeWindow)] + [dataSet[i] for i in range(len(dataSet)-sizeWindow, len(dataSet))]
 
+def smoothListGaussian(list,degree=5):  
 
-def waveletsmoothing(set):
+    window=degree*2-1  
+
+    weight=np.array([1.0]*window)  
+
+    weightGauss=[]  
+
+    for i in range(window):  
+
+        i=i-degree+1  
+
+        frac=i/float(window)  
+
+        gauss=1/(np.exp((4*(frac))**2))  
+
+        weightGauss.append(gauss)  
+
+    weight=np.array(weightGauss)*weight  
+
+    smoothed=[0.0]*(len(list)-window)  
+
+    for i in range(len(smoothed)):  
+
+        smoothed[i]=sum(np.array(list[i:i+window])*weight)/sum(weight)  
+
+    return list[0: degree] + smoothed + list[len(list)-degree+1: len(list)]
+
+def smoothListTriangle(list,strippedXs=False,degree=5):  
+
+    weight=[]  
+
+    window=degree*2-1  
+
+    smoothed=[0.0]*(len(list)-window)  
+
+    for x in range(1,2*degree):weight.append(degree-abs(degree-x))  
+
+    w=np.array(weight)  
+
+    for i in range(len(smoothed)):  
+
+        smoothed[i]=sum(np.array(list[i:i+window])*w)/float(sum(w))  
+
+    return list[0: degree] + smoothed + list[len(list)-degree+1: len(list)]
+
+def Savitzky_GolaySmoothing(dataSet, sizeWindow):
+	return 0
+
+def waveletsmoothing(set, type):
 	import pywt
-	cA,_ = pywt.dwt(set, 'db1')
+	cA,_ = pywt.dwt(set, type)
 	return cA
 
 def lineGraph(ySet):
@@ -109,7 +159,7 @@ def crossRecurrencePlots(windowTitle, dataMatrixBinary, dotSize = 0, myTitle = '
 	hightOfData = len(dataMatrixBinary);
 	for y in range(hightOfData):
 		for x in range(len(dataMatrixBinary[y])):
-			if (dataMatrixBinary[y][x] == 1):
+			if (dataMatrixBinary[y][x] == -1):
 				dataX.append(x)
 				## append hight-y nếu muốn vẽ đồ thị đúng chiều như lưu trong ma trận
 				dataY.append( hightOfData - y -1)
@@ -133,13 +183,20 @@ if (__name__ == '__main__'):
 		path.append("data/" + name)
 
 	print(path[1])
-	trainSetByShape, minSet, maxSet = readCSVFileByShape(path[1], '1', 2, 3)
+	trainSetByShape, minSet, maxSet = readCSVFileByShape(path[1], 2, 2, 3)
 	start = 0;
 
 	print(minSet, maxSet)
-	print(len(trainSetByShape))	
 
-	print(trainSetByShape)		
+	print(trainSetByShape[2])
+
+	x = smoothingMovingAverage(trainSetByShape[2])
+
+	print(x)
+
+	print(len(trainSetByShape[2]))	
+	print(len(x))
+
 
 
 

@@ -6,31 +6,17 @@ from scipy.spatial.distance import cdist
 import myCrpFunctions
 import os
 import pywt
+import myRP
 
 testShape = []
 shapePredict = []
 shape = 0
 
-
-#Make Folder
-def createFolder(directory):
-    try:
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-    except OSError:
-        print ('Error: Creating directory. ' +  directory)
-
-def writeContentToFile(pathFile, content):
-	file = open(pathFile, 'w')
-	for line in content:
-		file.write(line)
-	file.close()	
-
-def state_phase(v, start, dim, tau):
-	#v: vecto
-	#dim là số chiều (số phần tử)	
-	#tau là bước nhảy		
-	return [v[start + i*tau] for i in range(0, dim, 1)]
+# def state_phase(v, start, dim, tau):
+# 	#v: vecto
+# 	#dim là số chiều (số phần tử)	
+# 	#tau là bước nhảy		
+# 	return [v[start + i*tau] for i in range(0, dim, 1)]
 
 def checkRecall(outputFolder = None):
 	TP=TN=FP=FN=1
@@ -69,10 +55,8 @@ def checkRecall(outputFolder = None):
 		content.append('p = {:2.2}\n '.format( p))
 		content.append('f1 = {:2.2}\n '.format( f1))
 		pathOut = outputFolder + "readme.txt"
-		writeContentToFile(pathOut, content)
+		myCrpFunctions.writeContentToFile(pathOut, content)
 
-
-	
 
 def refreshPredict():
 	for i in range(len(shapePredict)):
@@ -104,23 +88,15 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 	# epsilon = 0.7 #data['epsilon']
 	# lambd = 2 #data['lambd']
 
-	vectors_train_1 = []
-	for i in range(len(trainSet)-(dim-1)*tau):
-		vectors_train_1.append(state_phase(trainSet, i, dim, tau)) 
+	vectors_train_1 = myRP.convert2StatePhase(trainSet, dim, tau, returnType = 'np.array')
 
 	#tách statephases
-	vectors_test_1 = []
-	for i in range(len(testSet)-(dim-1)*tau):
-		vectors_test_1.append(state_phase(testSet, i, dim, tau))
-
-	#ép kiểu về array
-	vectors_train_1 = np.array(vectors_train_1)
-	vectors_test_1 = np.array(vectors_test_1)
+	vectors_test_1 = myRP.convert2StatePhase(testSet, dim, tau, returnType = 'np.array')
 
 	# print("train.shape: ", vectors_train_1.shape)
 
 	# r_dist là ma trận khoảng cách
-	# cdist là hàm trong numpy
+	# cdist là hàm trong scipy.spatial.distance.cdist
 	# minkowski là cách tính
 	# p là norm
 	# y là train: đánh số từ trên xuống dưới
@@ -149,9 +125,14 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 	#r_dist < epsilon trả về ma trận 01, 1 tại điểm r_dist < epsilon
 	#ma trận này trừ đi 2 thì thành ma trận -2|-1
 	r1 = np.array((r_dist < epsilon)-2)
+
 	# r1 = np.array(r1 - 2)
 	
 	# f_crp = myCrpFunctions.crossRecurrencePlots("CRP", r1, dotSize = 0.2)
+	
+
+	aaa = myCrpFunctions.rqaFromBinaryMatrix(r1, keyDot = -1)
+	print(aaa)
 
 	len_r1 = int(np.size(r1[0]))
 	high_r1 = int(np.size(r1)/len_r1)
@@ -239,7 +220,7 @@ def predict_diagonal(trainSet, testSet, dim=5, tau=2, epsilon=0.7, lambd=3, perc
 
 def makeTestFeature(trainSet, testSet, dim=3, tau=2, epsilon=0.0055, lambd=3, percent=1, distNorm = 1, pathFolder = "result/", formatSave = ".png", trainSetID = None):
 	
-	createFolder(pathFolder)
+	myCrpFunctions.createFolder(pathFolder)
 	if (trainSetID == None):
 		import time
 		import datetime
@@ -258,7 +239,7 @@ def makeTestFeature(trainSet, testSet, dim=3, tau=2, epsilon=0.0055, lambd=3, pe
 
 def makeTestFeatureZoom(trainSet, testSet, dim=3, tau=2, epsilon=0.0055, lambd=3, percent=1, distNorm = 1, pathFolder = "result/", formatSave = ".png", trainSetID = None):
 	
-	createFolder(pathFolder)
+	myCrpFunctions.createFolder(pathFolder)
 	if (trainSetID == None):
 		import time
 		import datetime
@@ -346,7 +327,15 @@ if (__name__ == "__main__"):
 	print("len(trainSet): ", len(allTrainSet))
 	print("len(testSet): ", len(testSet))
 
+	# x_testInterpolation, y_testInterpolation = myCrpFunctions.myInterpolation(testSet[0:25], numNew = 50)
+	# plt.plot(testSet[0:25])
+	# plt.plot(x_testInterpolation, y_testInterpolation, 'o')
+	# plt.show()
+	# print("len_inter... = ", len(y_testInterpolation))
+	predict_diagonal(testSet[0:100], testSet[0:100], epsilon = 0.2)
+	plt.show()
 	
+
 
 '''
 	for i in range(0, len(allTrainSet)):
